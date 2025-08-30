@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.0.0" type="partial_results">
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="drawable[border(U)],layout[floating_view(U)],string[notification_text(U),app_name(U),notification_title(U),notification_channel_name(U)],style[AppTheme(U)],xml[file_paths(U)];1^0;;;"/>
+    </map>
+
+</incidents>

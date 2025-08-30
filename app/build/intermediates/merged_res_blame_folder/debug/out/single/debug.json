@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.blocksubtitle.app-merged_res-28:/drawable_border.xml.flat",
+        "source": "com.example.blocksubtitle.app-main-30:/drawable/border.xml"
+    },
+    {
+        "merged": "com.example.blocksubtitle.app-merged_res-28:/layout_floating_view.xml.flat",
+        "source": "com.example.blocksubtitle.app-main-30:/layout/floating_view.xml"
+    },
+    {
+        "merged": "com.example.blocksubtitle.app-merged_res-28:/xml_file_paths.xml.flat",
+        "source": "com.example.blocksubtitle.app-main-30:/xml/file_paths.xml"
+    }
+]
