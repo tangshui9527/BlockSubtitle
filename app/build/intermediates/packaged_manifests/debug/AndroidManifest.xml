@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
 
     <permission
         android:name="com.example.blocksubtitle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
