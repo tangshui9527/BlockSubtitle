@@ -22,6 +22,7 @@
 - 支持单指拖拽移动和调整大小
 - 使用GestureDetector处理双击关闭操作
 - 保存和恢复窗口位置与大小
+- 兼容Android 14+的前台服务权限要求
 
 ## 使用方法
 
@@ -43,3 +44,19 @@
 ```bash
 ./gradlew assembleDebug
 ```
+
+## 修复记录
+
+### 修复Android 14前台服务权限问题 (2025-08-31)
+
+从Android 14开始，启动前台服务需要明确声明服务类型和相应的权限。本次更新解决了在Android 14+设备上因权限问题导致的应用崩溃。
+
+修复内容：
+1. 在`AndroidManifest.xml`中添加了`FOREGROUND_SERVICE_SPECIAL_USE`权限
+2. 在`FloatingWindowService.java`中修改了`startForeground`调用，添加了服务类型参数
+3. 添加了必要的导入语句
+
+## 版本历史
+
+- v1.0 (2025-08-31): 初始版本，支持基本的悬浮窗功能
+- v1.1 (2025-08-31): 修复Android 14前台服务权限问题
