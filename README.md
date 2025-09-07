@@ -1,62 +1,120 @@
-# Block Subtitle (悬浮字幕遮挡器)
+An Android application that creates a resizable floating window (overlay) that can be used to block subtitles or other UI elements on the screen.
 
-## 项目概述
+## Features
 
-这是一款极简的安卓应用，其唯一功能是在屏幕上创建一个可自由移动和调整大小的悬浮窗，用于遮挡视频字幕或其他内容。
+- Creates a floating window that overlays on top of other apps
+- Resizable window with draggable edges
+- Movable window by dragging the center area
+- Double-tap to close the floating window
+- Remembers window position and size between sessions
+- Runs as a foreground service with a notification
+- Supports Android 6.0 (API 23) and above
 
-## 核心功能
+## How It Works
 
-- **启动方式**：点击应用图标后，无需进入任何主界面，直接请求权限并创建悬浮窗。
-- **窗口外观**：
-  - 默认颜色：浅灰色 (Light Gray)。
-  - 初始尺寸：启动时为一个小的默认尺寸，用户可立即调整。
-- **交互操作**：
-  - **移动**：通过拖拽窗口任意位置自由移动。
-  - **调整大小**：通过拖拽窗口边缘或角落自由调整宽度和高度。
-  - **关闭**：通过双击悬浮窗任意位置来关闭它并停止服务。
+1. When launched, the app requests the necessary "Draw over other apps" permission
+2. After permission is granted, it starts a foreground service that creates a floating window
+3. The floating window:
+   - Has a semi-transparent gray background with a border for visibility
+   - Can be moved by dragging the center area
+   - Can be resized by dragging any edge or corner
+   - Can be closed by double-tapping anywhere on the window
+4. Window position and size are saved automatically when the service is stopped
 
-## 技术实现
+## Installation
 
-- 使用Android Service管理悬浮窗生命周期
-- 通过WindowManager添加和控制悬浮窗视图
-- 支持单指拖拽移动和调整大小
-- 使用GestureDetector处理双击关闭操作
-- 保存和恢复窗口位置与大小
-- 兼容Android 14+的前台服务权限要求
+### Prerequisites
 
-## 使用方法
+- Android device running Android 6.0 (API 23) or higher
+- USB debugging enabled for sideloading (if not installing from Play Store)
 
-1. 安装应用
-2. 启动应用并授予悬浮窗权限
-3. 悬浮窗出现后：
-   - 在中心区域拖拽来移动窗口
-   - 在边缘或角落拖拽来调整大小
-   - 双击窗口任意位置关闭应用
+### Building from Source
 
-## 开发环境
+1. Clone this repository
+2. Open the project in Android Studio
+3. Build the project:
+   ```
+   ./gradlew build
+   ```
+4. Install the APK on your device:
+   ```
+   ./gradlew installDebug
+   ```
 
-- Android Studio
-- Java
-- Android SDK
+### Direct APK Installation
 
-## 构建说明
+If you have a pre-built APK, simply transfer it to your device and open it to install.
 
-```bash
-./gradlew assembleDebug
+## Usage
+
+1. Launch the app
+2. Grant the "Draw over other apps" permission when prompted
+3. A floating gray window will appear on your screen
+4. Move the window by dragging the center area
+5. Resize the window by dragging any edge or corner
+6. Double-tap anywhere on the window to close it
+
+## Technical Details
+
+### Architecture
+
+- **LauncherActivity**: Transparent activity that handles permission requests and starts the service
+- **FloatingWindowService**: Foreground service that manages the floating window lifecycle
+- **WindowStateHelper**: Utility class that saves and restores window position and size
+
+### Key Components
+
+- Uses `WindowManager` to create and manage the floating window
+- Implements touch listeners for moving and resizing functionality
+- Uses `GestureDetector` to detect double-tap for closing the window
+- Saves window state using `SharedPreferences`
+- Runs as a foreground service with a notification to prevent the system from killing it
+
+### Permissions
+
+- `SYSTEM_ALERT_WINDOW`: Required to draw over other apps
+- `FOREGROUND_SERVICE`: Required to run the foreground service
+- `FOREGROUND_SERVICE_SPECIAL_USE`: Required for the special use case of overlay window
+
+## Development
+
+### Project Structure
+
+```
+app/
+├── src/main/java/com/example/blocksubtitle/
+│   ├── activity/
+│   │   └── LauncherActivity.java
+│   ├── service/
+│   │   └── FloatingWindowService.java
+│   └── util/
+│       └── WindowStateHelper.java
+├── src/main/res/
+│   ├── layout/
+│   │   └── floating_view.xml
+│   ├── drawable/
+│   │   └── border.xml
+│   └── values/
+│       ├── strings.xml
+│       └── styles.xml
+└── build.gradle
 ```
 
-## 修复记录
+### Dependencies
 
-### 修复Android 14前台服务权限问题 (2025-08-31)
+- AndroidX AppCompat
+- AndroidX Core
+- AndroidX ConstraintLayout
+- Material Components for Android
 
-从Android 14开始，启动前台服务需要明确声明服务类型和相应的权限。本次更新解决了在Android 14+设备上因权限问题导致的应用崩溃。
+## Contributing
 
-修复内容：
-1. 在`AndroidManifest.xml`中添加了`FOREGROUND_SERVICE_SPECIAL_USE`权限
-2. 在`FloatingWindowService.java`中修改了`startForeground`调用，添加了服务类型参数
-3. 添加了必要的导入语句
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a pull request
 
-## 版本历史
+## License
 
-- v1.0 (2025-08-31): 初始版本，支持基本的悬浮窗功能
-- v1.1 (2025-08-31): 修复Android 14前台服务权限问题
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details (if available).
