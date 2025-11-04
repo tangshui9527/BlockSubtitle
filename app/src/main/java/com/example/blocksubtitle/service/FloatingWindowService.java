@@ -4,11 +4,13 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.Service;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ServiceInfo;
 import android.graphics.PixelFormat;
 import android.os.Build;
 import android.os.IBinder;
+import android.service.quicksettings.TileService;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.Gravity;
@@ -41,12 +43,19 @@ public class FloatingWindowService extends Service {
     
     // 状态保存助手
     private WindowStateHelper windowStateHelper;
+    
+    private void notifyQuickSettingsTile() {
+        ComponentName componentName = new ComponentName(this, QuickSettingsTileService.class);
+        TileService.requestListeningState(this, componentName);
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
         Log.d(TAG, "Service created");
         windowStateHelper = new WindowStateHelper(this);
+        windowStateHelper.setServiceRunning(true);
+        notifyQuickSettingsTile();
         
         createNotificationChannel();
         startForeground(NOTIFICATION_ID, createNotification(), 
@@ -378,6 +387,8 @@ public class FloatingWindowService extends Service {
     public void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "Service destroyed");
+        windowStateHelper.setServiceRunning(false);
+        notifyQuickSettingsTile();
         // 保存当前窗口状态
         if (params != null && floatingView != null) {
             windowStateHelper.saveWindowState(

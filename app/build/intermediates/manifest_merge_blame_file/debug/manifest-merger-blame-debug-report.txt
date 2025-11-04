@@ -32,94 +32,124 @@
 19-->[androidx.core:core:1.9.0] /Users/tangshui/.gradle/caches/transforms-3/29f3f9c4dcee74f9d479c7b40e59c2e2/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 20
 21    <application
-21-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:7:5-40:19
+21-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:7:5-55:19
 22        android:allowBackup="true"
 22-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:8:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.9.0] /Users/tangshui/.gradle/caches/transforms-3/29f3f9c4dcee74f9d479c7b40e59c2e2/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
-26        android:label="@string/app_name"
-26-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:9:9-41
-27        android:supportsRtl="true"
-27-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:10:9-35
-28        android:theme="@style/AppTheme" >
-28-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:11:9-40
-29        <activity
-29-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:13:9-20:20
-30            android:name="com.example.blocksubtitle.activity.LauncherActivity"
-30-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:13:19-60
-31            android:exported="true"
-31-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:14:19-42
-32            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-32-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:15:19-78
-33            <intent-filter>
-33-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:16:13-19:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:17:17-69
-34-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:17:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:18:17-77
-36-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:18:27-74
-37            </intent-filter>
-38        </activity>
-39
-40        <service
-40-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:22:9-28:19
-41            android:name="com.example.blocksubtitle.service.FloatingWindowService"
-41-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:22:18-63
-42            android:enabled="true"
-42-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:23:18-40
-43            android:exported="true"
-43-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:24:18-41
-44            android:foregroundServiceType="specialUse" >
-44-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:25:18-60
-45            <property
-45-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:26:13-27:55
-46                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-46-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:26:23-82
-47                android:value="overlay_window" />
-47-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:27:23-53
-48        </service>
-49
-50        <provider
-51            android:name="androidx.core.content.FileProvider"
-51-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:31:13-62
-52            android:authorities="com.example.blocksubtitle.fileprovider"
-52-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:32:13-64
-53            android:exported="false"
-53-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:33:13-37
-54            android:grantUriPermissions="true" >
-54-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:34:13-47
-55            <meta-data
-55-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:35:13-37:54
-56                android:name="android.support.FILE_PROVIDER_PATHS"
-56-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:36:17-67
-57                android:resource="@xml/file_paths" />
-57-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:37:17-51
-58        </provider>
-59        <provider
-59-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-60            android:name="androidx.startup.InitializationProvider"
-60-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-61            android:authorities="com.example.blocksubtitle.androidx-startup"
-61-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-62            android:exported="false" >
-62-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-63            <meta-data
-63-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-64-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-65                android:value="androidx.startup" />
-65-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-66            <meta-data
-66-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tangshui/.gradle/caches/transforms-3/2b58776b475b827b81bdbdf5e9e4abf8/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-67-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tangshui/.gradle/caches/transforms-3/2b58776b475b827b81bdbdf5e9e4abf8/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-68                android:value="androidx.startup" />
-68-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tangshui/.gradle/caches/transforms-3/2b58776b475b827b81bdbdf5e9e4abf8/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-69        </provider>
-70    </application>
-71
-72</manifest>
+26        android:icon="@mipmap/ic_launcher"
+26-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:9:9-43
+27        android:label="@string/app_name"
+27-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:10:9-41
+28        android:supportsRtl="true"
+28-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:11:9-35
+29        android:theme="@style/AppTheme" >
+29-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:12:9-40
+30        <activity
+30-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:14:9-21:20
+31            android:name="com.example.blocksubtitle.activity.LauncherActivity"
+31-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:14:19-60
+32            android:exported="true"
+32-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:15:19-42
+33            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+33-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:16:19-78
+34            <intent-filter>
+34-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:17:13-20:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:18:17-69
+35-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:18:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:19:17-77
+37-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:19:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <service
+41-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:23:9-29:19
+42            android:name="com.example.blocksubtitle.service.FloatingWindowService"
+42-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:23:18-63
+43            android:enabled="true"
+43-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:24:18-40
+44            android:exported="true"
+44-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:25:18-41
+45            android:foregroundServiceType="specialUse" >
+45-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:26:18-60
+46            <property
+46-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:27:13-28:55
+47                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+47-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:27:23-82
+48                android:value="overlay_window" />
+48-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:28:23-53
+49        </service>
+50
+51        <!-- 快速设置磁贴服务 -->
+52        <service
+52-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:32:9-43:19
+53            android:name="com.example.blocksubtitle.service.QuickSettingsTileService"
+53-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:32:18-66
+54            android:exported="true"
+54-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:36:18-41
+55            android:icon="@drawable/ic_tile_icon"
+55-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:34:18-55
+56            android:label="@string/quick_settings_tile_label"
+56-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:33:18-67
+57            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
+57-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:35:18-82
+58            <intent-filter>
+58-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:37:13-39:29
+59                <action android:name="android.service.quicksettings.action.QS_TILE" />
+59-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:38:17-87
+59-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:38:25-84
+60            </intent-filter>
+61
+62            <meta-data
+62-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:40:13-42:40
+63                android:name="android.service.quicksettings.ACTIVE_TILE"
+63-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:41:17-73
+64                android:value="true" />
+64-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:42:17-37
+65        </service>
+66
+67        <provider
+68            android:name="androidx.core.content.FileProvider"
+68-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:46:13-62
+69            android:authorities="com.example.blocksubtitle.fileprovider"
+69-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:47:13-64
+70            android:exported="false"
+70-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:48:13-37
+71            android:grantUriPermissions="true" >
+71-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:49:13-47
+72            <meta-data
+72-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:50:13-52:54
+73                android:name="android.support.FILE_PROVIDER_PATHS"
+73-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:51:17-67
+74                android:resource="@xml/file_paths" />
+74-->/Users/tangshui/Desktop/blockSubtitle/app/src/main/AndroidManifest.xml:52:17-51
+75        </provider>
+76        <provider
+76-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+78            android:authorities="com.example.blocksubtitle.androidx-startup"
+78-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+79            android:exported="false" >
+79-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+80            <meta-data
+80-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+81-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+82                android:value="androidx.startup" />
+82-->[androidx.emoji2:emoji2:1.2.0] /Users/tangshui/.gradle/caches/transforms-3/b4c42c170760e861c8fad4bd72d0a5f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+83            <meta-data
+83-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tangshui/.gradle/caches/transforms-3/2b58776b475b827b81bdbdf5e9e4abf8/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tangshui/.gradle/caches/transforms-3/2b58776b475b827b81bdbdf5e9e4abf8/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+85                android:value="androidx.startup" />
+85-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tangshui/.gradle/caches/transforms-3/2b58776b475b827b81bdbdf5e9e4abf8/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+86        </provider>
+87    </application>
+88
+89</manifest>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Block Subtitle</string>
+    <string name="app_name">BarBarBarBar</string>
     <string name="notification_channel_name">悬浮窗服务</string>
     <string name="notification_text">点击管理悬浮窗</string>
     <string name="notification_title">悬浮窗服务正在运行</string>
+    <string name="quick_settings_tile_label">bar</string>
+    <string name="quick_settings_tile_label_active">Bar ON</string>
+    <string name="quick_settings_tile_label_inactive">Bar OFF</string>
     <style name="AppTheme" parent="android:Theme.DeviceDefault.Light.NoActionBar">
         
     </style>

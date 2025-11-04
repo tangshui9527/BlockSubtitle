@@ -1,10 +1,17 @@
 R_DEF: Internal format may change without notice
 local
 drawable border
+drawable ic_tile_icon
+drawable ic_tile_icon_active
+drawable ic_tile_icon_inactive
 layout floating_view
+mipmap ic_launcher
 string app_name
 string notification_channel_name
 string notification_text
 string notification_title
+string quick_settings_tile_label
+string quick_settings_tile_label_active
+string quick_settings_tile_label_inactive
 style AppTheme
 xml file_paths

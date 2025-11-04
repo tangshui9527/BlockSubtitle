@@ -1,14 +1,46 @@
 [
     {
-        "merged": "com.example.blocksubtitle.app-merged_res-28:/drawable_border.xml.flat",
-        "source": "com.example.blocksubtitle.app-main-30:/drawable/border.xml"
+        "merged": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-merged_res-28:/xml_file_paths.xml.flat",
+        "source": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-main-30:/xml/file_paths.xml"
     },
     {
-        "merged": "com.example.blocksubtitle.app-merged_res-28:/layout_floating_view.xml.flat",
-        "source": "com.example.blocksubtitle.app-main-30:/layout/floating_view.xml"
+        "merged": "com.example.blocksubtitle.app-merged_res-28:/drawable_ic_tile_icon_inactive.xml.flat",
+        "source": "com.example.blocksubtitle.app-main-30:/drawable/ic_tile_icon_inactive.xml"
     },
     {
-        "merged": "com.example.blocksubtitle.app-merged_res-28:/xml_file_paths.xml.flat",
-        "source": "com.example.blocksubtitle.app-main-30:/xml/file_paths.xml"
+        "merged": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-merged_res-28:/drawable_border.xml.flat",
+        "source": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-main-30:/drawable/border.xml"
+    },
+    {
+        "merged": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-merged_res-28:/layout_floating_view.xml.flat",
+        "source": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-main-30:/layout/floating_view.xml"
+    },
+    {
+        "merged": "com.example.blocksubtitle.app-merged_res-28:/drawable_ic_tile_icon_active.xml.flat",
+        "source": "com.example.blocksubtitle.app-main-30:/drawable/ic_tile_icon_active.xml"
+    },
+    {
+        "merged": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-merged_res-28:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-main-30:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-main-30:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.blocksubtitle.app-merged_res-28:/drawable_ic_tile_icon.xml.flat",
+        "source": "com.example.blocksubtitle.app-main-30:/drawable/ic_tile_icon.xml"
+    },
+    {
+        "merged": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-merged_res-28:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-main-30:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-merged_res-28:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-main-30:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-merged_res-28:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/tangshui/.gradle/daemon/8.5/com.example.blocksubtitle.app-main-30:/mipmap-xxhdpi/ic_launcher.png"
     }
 ]

@@ -12,6 +12,7 @@ public class WindowStateHelper {
     private static final String KEY_HEIGHT = "height";
     private static final String KEY_X = "x";
     private static final String KEY_Y = "y";
+    private static final String KEY_SERVICE_RUNNING = "service_running";
 
     private SharedPreferences prefs;
 
@@ -34,6 +35,16 @@ public class WindowStateHelper {
         int x = prefs.getInt(KEY_X, 0); // 默认X坐标
         int y = prefs.getInt(KEY_Y, 0); // 默认Y坐标
         return new WindowStateHelper.WindowState(width, height, x, y);
+    }
+
+    public void setServiceRunning(boolean isRunning) {
+        prefs.edit()
+                .putBoolean(KEY_SERVICE_RUNNING, isRunning)
+                .apply();
+    }
+
+    public boolean isServiceRunning() {
+        return prefs.getBoolean(KEY_SERVICE_RUNNING, false);
     }
 
     public static class WindowState {
